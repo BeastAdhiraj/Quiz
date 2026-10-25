@@ -115,7 +115,7 @@ export default function Home() {
 
       // Load your custom exported Canva template image
       const bgImage = new Image();
-      bgImage.src = '/certificat.png'; // Path to your Canva exported image in public folder
+      bgImage.src = `${process.env.NEXT_PUBLIC_HOST_LINK}/public/certificat.png`; // Path to your Canva exported image in public folder
       
       bgImage.onload = () => {
         // Draw the Canva background image first
